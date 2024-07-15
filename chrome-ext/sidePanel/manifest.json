@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "sidePanel",
+  "version": "1.0",
+  "author":"John",
+  "description": "sidePanel",
+  "permissions": [
+    "sidePanel",
+    "scripting",
+    "activeTab",
+    "nativeMessaging",
+    "contextMenus"
+  ],
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "background": {
+		"service_worker": "background.js"
+	},
+  "action": {
+    "default_title": "点击打开侧边栏"
+  },
+  "host_permissions": [
+		"https://*/*"
+	]
+}

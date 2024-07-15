@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Network Monitor",
+  "version": "1.0",
+  "description": "Monitors network requests and logs response bodies.",
+  "permissions": [
+    "tabs", 
+    "activeTab",
+    "debugger",
+    "scripting",
+    "webNavigation",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "devtools_page": "devtools.html",
+  "host_permissions": [
+    "<all_urls>"
+  ]
+}

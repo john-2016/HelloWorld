@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Auto Open DevTools",
+  "version": "1.0",
+  "permissions": [
+    "tabs", 
+    "activeTab",
+    "debugger",
+    "storage",
+    "webNavigation",
+    "scripting"
+  ],
+  "background": {
+      "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "externally_connectable": {
+    "matches": ["<all_urls>"]
+  }
+}
